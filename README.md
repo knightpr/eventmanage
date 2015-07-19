@@ -134,5 +134,9 @@ I have added small scripts under package.json to run the watch and keep tracking
 For I have tested with [Nginx](http://nginx.org/) webserve.
 
 
-    Please have a look **sample.ngix.conf** for sample configuration for nginx, you can change the configuration according to your environment setup. 
+    Please have a look **sample.ngix.conf** for sample configuration for nginx, 
+    you   can change the configuration according to your environment setup. 
+    
+    
+    
 
