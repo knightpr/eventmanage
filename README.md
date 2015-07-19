@@ -1,3 +1,6 @@
+#Test Event Manager application 
+This is very basic example for simple event manage application by using PHP,MYSQL in the backend and backbonejs,bootstrap, HTML5 and CSS3 in the fronend.
+
 ###Main folder strcuture
         events
         -->client
@@ -5,13 +8,14 @@
         -->README.md
 
 ## Back-end(server) technology used
+- PHP (5.6.10)
+- [Silex](http://silex.sensiolabs.org/) php micro framework for handling APIs
 
-- Silex php micro framework for handling APIs
 
 
 ##DATABASE 
 
-- mysql database is used
+- MYSQL server (5.6.25) database is used
 
 ### DATABASE CONFIGURATION
 
@@ -28,12 +32,12 @@ USE events
 
         CREATE TABLE events (
             id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        	name  varchar(255) NOT NULL,
-        	description text NOT NULL ,
-        	start_datetime DATETIME NOT NULL,
-        	end_datetime DATETIME NOT NULL,
-        	creation_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        	modification_datetime DATETIME NULL ON UPDATE CURRENT_TIMESTAMP
+            name  varchar(255) NOT NULL,
+          description text NOT NULL ,
+          start_datetime DATETIME NOT NULL,
+          end_datetime DATETIME NOT NULL,
+          creation_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+          modification_datetime DATETIME NULL ON UPDATE CURRENT_TIMESTAMP
         );
 
 
@@ -53,7 +57,7 @@ USE events
           -->index.php
           
 
-README.md
+
 
 ##Front-end(client) technology used :
 
@@ -61,7 +65,7 @@ README.md
       - Javascript framework for providing MVC and routine structure to the application 
       - although Controllers and Models are not used for this use case
  2. Bootstrapsjs
-	 - HTML, CSS and JS framework for fast responsive design is used
+   - HTML, CSS and JS framework for fast responsive design is used
  3. Requirejs
        - RequireJS is a JavaScript file and module loader and used for css and js files optimization for this assignment
  4. Handlebarjs
@@ -73,26 +77,26 @@ README.md
 ### client folder structure
 
     `   client
-    	->build
-    	 -->www
-    	 -->www-raw
-    	 ->css
-    	 ->img
-    	 ->js
-    	 -->libs
-    	 ---->backbone
-    	 ---->bootstrap
-    	  ---->jquery
-    	  ---->underscore
-    	  ---->handlebarjs
-    	  .....
-    	  ->node_modules
-    	  ->sass
-    	  ->template
-    	  ->MakeFile
-    	  ->README.md
-    	  ->index.html
-    	  ->package.json
+      ->build
+       -->www
+       -->www-raw
+       ->css
+       ->img
+       ->js
+       -->libs
+       ---->backbone
+       ---->bootstrap
+        ---->jquery
+        ---->underscore
+        ---->handlebarjs
+        .....
+        ->node_modules
+        ->sass
+        ->template
+        ->MakeFile
+        ->README.md
+        ->index.html
+        ->package.json
       `
 
 ###*Main Interested files might be* ,
@@ -126,4 +130,9 @@ I have added small scripts under package.json to run the watch and keep tracking
     npm run dev
 
  
+##Web server setup
+For I have tested with [Nginx](http://nginx.org/) webserve.
+
+
+    Please have a look **sample.ngix.conf** for sample configuration for nginx, you can change the configuration according to your environment setup. 
 
