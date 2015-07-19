@@ -1,0 +1,17 @@
+<!-- for rendling single event template page -->
+<tr class="event-items" data-id="{{this.id}}}">
+      <td>
+      	<div class="event-title">{{this.name}}</div>
+      	<div class="event-date">{{this.start_datetime}} - {{this.end_datetime}}</div>
+      	<div class="event-description">{{this.description}}</div>
+      	<div class="event-action">
+	      	<a type="button" class="btn btn-default btn-info btn-sm btn-edit-event" data-id={{this.id}} data-toggle="modal" data-target="#editeventModal">
+		  			Edit
+			</a>
+
+		 	<a type="button" class="btn btn-danger btn-sm btn-remove-event" data-id={{this.id}} data-toggle="modal" data-target="#removeeventModal">
+		  			Remove
+			</a>
+      	</div>
+  	</td>
+</tr>

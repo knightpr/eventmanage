@@ -1,0 +1,29 @@
+ <!-- event home template page -->
+ <div>
+ 	<a type="button" class="btn btn-primary btn-new-event" data-toggle="modal" data-target="#eventModal">
+  			Create New Event
+	</a>
+ </div>
+ <div class="none-table-responsive">
+    <table id="table-event-list" class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Events</th>
+      
+                </tr>
+              </thead>
+              <tbody>
+              {{#each events}}
+              	 {{> template_singleEvent }}	
+                
+   			      {{/each}}  
+             
+              </tbody>
+    </table>
+  </div>
+  <div class="alert alert-warning noevent">
+    <p>Create your first event!</p>
+  </div>
+
+
+       

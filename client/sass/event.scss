@@ -1,0 +1,77 @@
+/*This is very simple SASS file for handling all the css realted to the event*/
+/* It is compile to the css/events.css file*/
+$main_body_bg : #fff;
+$header_bg : #45619D;
+$header_font_color : #fff; 
+$header_brand_font_color : #fff;
+$main_font : Arial;
+
+
+body{
+	background: $main_body_bg;
+	font-family: $main_font;
+}
+#main{
+	padding-top: 60px;
+}
+form#form-event-update{
+	padding: 15px;
+}
+.btn-new-event {
+	margin-bottom: 10px;
+}
+.navbar-inverse{
+	background :$header_bg;
+	color: $header_font_color;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: $header_font_color;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	color: #444;
+}
+.navbar-inverse .navbar-brand{
+	color: $header_brand_font_color;
+	font-width:bold;
+}
+.event-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.event-date{
+	font-weight: bold;
+	color: #777;
+	font-size: 1em;
+	padding: 5px 0px !important;
+}
+.event-description {
+    font-size: 0.9em;
+    color: #555;
+    padding-bottom: 10px;
+}
+label.error{
+	color: red;
+}
+.form-control.error{
+	border: 1px solid red;
+}
+.form-horizontal .control-label {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    margin-left: -10px;
+    font-weight: bold;
+}
+.noevent{
+	display: none;
+}
+#content {
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0px 0px 5px 5px #eee !important;
+    border-radius: 5px;
+}
+.navbar-nav li:hover{
+	background: #ddd;
+	color: #444;
+}

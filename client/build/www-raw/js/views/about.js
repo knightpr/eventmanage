@@ -1,0 +1,1 @@
+define(["jquery","underscore","backbone","hbs!template/about"],function(e,t,n,r){var i=function(){var e={},t=r(e),n=this;return this.$el.html(t),this},s=function(){},o=n.View.extend({events:{},render:i,initialize:s});return o});

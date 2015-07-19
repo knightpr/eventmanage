@@ -1,0 +1,20 @@
+{
+  "name": "EventManager",
+  "readme": "README.md",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "name": "Rauniyar Pramod",
+      "email": "pramod.rauniyar@gmail.com"
+    }
+   ],
+  "scripts": {
+    "sass": "sass sass/event.scss css/event.css",
+    "sass-dev": "sass --watch sass/event.scss:css/event.css",
+    "dev": "npm run sass-dev"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "requirejs": "2.1.8"
+  }
+}

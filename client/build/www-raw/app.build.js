@@ -1,0 +1,1 @@
+({appDir:"./",baseUrl:"./js",dir:"./build/www-raw",fileExclusionRegExp:/^node_modules$/,optimizeCss:"standard",inlineText:!0,pragmaOnSave:{excludeHbsParser:!0,excludeHbs:!0,excludeAfterBuild:!0},mainConfigFile:"js/main.js",modules:[{name:"main"}]});

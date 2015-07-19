@@ -1,0 +1,17 @@
+{
+    "require": {
+        "silex/silex": "~1.1",
+        "symfony/config": "~2.3",
+        "symfony/monolog-bridge": "~2.3",
+        "doctrine/dbal": ">=2.2.0,<2.4.0-dev",
+        "monolog/monolog": ">=1.0.0",
+        "franmomu/silex-paris-provider": "*"
+     },
+     "autoload": {
+        "psr-0": {
+          "": "src/",
+          "app": "src/"
+        }
+      },
+     "minimum-stability": "dev"
+}
