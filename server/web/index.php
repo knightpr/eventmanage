@@ -7,6 +7,9 @@
 
 */
 
+//setting default timezone for php to UTC  
+date_default_timezone_set('UTC');
+
 //loading database configuration file 
 require_once __DIR__.'/../config/db.inc.php';
 

@@ -33,7 +33,7 @@ USE events
         	start_datetime DATETIME NOT NULL,
         	end_datetime DATETIME NOT NULL,
         	creation_datetime DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-        	modification_datetime DATETIME NOT NULL ON UPDATE CURRENT_TIMESTAMP
+        	modification_datetime DATETIME NULL ON UPDATE CURRENT_TIMESTAMP
         );
 
 
